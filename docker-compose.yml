@@ -9,7 +9,7 @@ services:
             - "mysql-data:/var/lib/mysql"
         environment:
             MYSQL_ROOT_PASSWORD: pereira
-            MYSQL_DATABASE: blog
+            MYSQL_DATABASE: portafolio
 
     app:
         build: .
