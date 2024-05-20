@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS educacion (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    year VARCHAR(255) NOT NULL,
+    grade VARCHAR(255) NOT NULL,
+    institution VARCHAR(255) NOT NULL
+);
