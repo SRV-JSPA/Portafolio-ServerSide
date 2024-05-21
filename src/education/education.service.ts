@@ -12,4 +12,8 @@ export class EducationService {
         const newEdu = this.educationRepository.create(educationInfo);
         return this.educationRepository.save(newEdu);
     }
+
+    getEducations(){
+        return this.educationRepository.find();
+    }
 }
