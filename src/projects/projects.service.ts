@@ -16,4 +16,8 @@ export class ProjectsService {
     getProjects(){
         return this.projectsRepository.find()
     }
+
+    deleteProject(id: number){
+        return this.projectsRepository.delete(id)
+    }
 }

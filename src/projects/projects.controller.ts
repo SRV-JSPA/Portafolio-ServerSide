@@ -1,4 +1,4 @@
-import { Controller, Post, Get, Body } from '@nestjs/common';
+import { Controller, Post, Get, Body, Param, ParseIntPipe, Delete } from '@nestjs/common';
 import { ProjectsService } from './projects.service';
 import { createProjectDto } from './dto/createProject.dto';
 import { projects } from './projects.entity';
@@ -15,5 +15,10 @@ export class ProjectsController {
     @Get()
     getProjects(): Promise<projects[]>{
         return this.projectService.getProjects()
+    }
+
+    @Delete(':id')
+    deleteProject(@Param('id', ParseIntPipe) id: number ){
+        return this.projectService.deleteProject(id)
     }
 }
