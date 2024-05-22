@@ -4,9 +4,6 @@ import {Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export class projects {
     @PrimaryGeneratedColumn()
     id: number
-
-    @Column()
-    image: string
     
     @Column()
     description: string
