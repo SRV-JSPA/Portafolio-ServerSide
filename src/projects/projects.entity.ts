@@ -6,9 +6,6 @@ export class projects {
     id: number
 
     @Column()
-    title: string
-
-    @Column()
     image: string
     
     @Column()
