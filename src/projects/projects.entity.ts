@@ -7,6 +7,9 @@ export class projects {
 
     @Column()
     title: string
+
+    @Column()
+    image: string
     
     @Column()
     description: string
